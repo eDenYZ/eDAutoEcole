@@ -13,6 +13,10 @@ local CurrentTestType = nil
 local Licenses = {}
 local permisencours = ""
 
+function SetZoneTypeVille(type)
+    ZoneTypeVille = type
+end
+
 function StopDriveTest(success)
 	if success then
 		TriggerServerEvent('</eDen:addLicense', permisencours)
