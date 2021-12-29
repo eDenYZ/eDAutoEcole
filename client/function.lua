@@ -45,12 +45,6 @@ function StopDriveTest(success)
 	CurrentTestType = nil
 end
 
-
-function SetCurrentZoneType(type)
-    CurrentZoneType = type
-end
-
-
 function StartConduite()
 	startedconduite = true
 	while startedconduite do
@@ -100,7 +94,7 @@ function StartConduite()
 				end
 
 				if distance <= 3.0 then
-					eDAutoEcole.AutoEcole.CheckPoints[nextCheckPoint].Action(PlayerPedId(), SetCurrentZoneType)
+					eDAutoEcole.AutoEcole.CheckPoints[nextCheckPoint].Action(PlayerPedId(), SetZoneTypeVille)
 					CurrentCheckPoint = CurrentCheckPoint + 1
 				end
 			end
