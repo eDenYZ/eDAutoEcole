@@ -13,10 +13,6 @@ local CurrentTestType = nil
 local Licenses = {}
 local permisencours = ""
 
-function SetZoneTypeVille(type)
-    ZoneTypeVille = type
-end
-
 function StopDriveTest(success)
 	if success then
 		TriggerServerEvent('</eDen:addLicense', permisencours)
@@ -108,7 +104,7 @@ function StartConduite()
 				local GetSpeed = math.floor(GetEntitySpeed(vehicle) * 3.6)
 				local speed_limit_residence = eDAutoEcole.AutoEcole.Infos.Route.Residence
 				local speed_limit_ville = eDAutoEcole.AutoEcole.Infos.Route.Ville
-				local speed_limit_otoroute = eDAutoEcole.AutoEcole.Infos.Route.Otoroute
+				local speed_limit_otoroute = eDAutoEcole.AutoEcole.Infos.Route.OToroute
 
 				local DamageControl = 0
 
