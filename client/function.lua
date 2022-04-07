@@ -208,7 +208,8 @@ end
 
 function StartDriveTestMoto()
     for k, v in pairs(eDAutoEcole.AutoEcole.DriveTeste.DriveTestMoto) do
-        CurrentTest = 'drive'
+	CurrentTest       = 'drive'
+        CurrentTestType   = type
         startedconduite = true
         permisencours = "bike"
         drivetest = "moto"
@@ -231,7 +232,9 @@ end
 
 function StartDriveTestCamion()
     for k, v in pairs(eDAutoEcole.AutoEcole.DriveTeste.DriveTestCamion) do
-        CurrentTest = 'drive'
+	CurrentTest       = 'drive'
+        CurrentTestType   = type
+        startedconduite = true
         permisencours = "truck"
         drivetest = "camion"
     
